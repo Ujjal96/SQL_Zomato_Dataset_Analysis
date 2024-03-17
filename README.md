@@ -1,24 +1,26 @@
 # Zomato_Dataset_Analysis
-Zomato Data Exploration and Analysis with SQL (SQL SERVER)
+Zomato is a big company that helps people find restaurants and get food delivered. The dataset they have has lots of information about restaurants, like their names, where they are, what food they serve, and more.
 
-Most of us know that Zomato is an Indian multinational restaurant aggregator and food delivery company. The idea of analysing the Zomato_dataset is to get the overview of what actutally is happening in their business. Zomato Dataset consist of more than 9000 rows with columns such as Restaurants_id, Restaurants_name, City, Location, Cuisines and many more...
+In my analysis with SQL (a way to work with data), I did these things:
 
-While Exploring Data with SQL, I was working on the following things...
-1. Checked all the details of table such column name, data types and constraints
-2. Checked for duplicate values in [RestaurantId] column
-3. Removed unwanted columns from table
-4. Merged 2 differnt tables and added the new column of Country_Name with the help of primary key as [CountryCode] column
-5. Identitfied and corrected the mis-spelled city names
-6. Counted the no.of restaurants by rolling count/moving count using windows functions
-7. Checked min,max,avg data for votes, rating & currency column.
-8. Created new category column for rating
+1. Checked the table details, like what each column is called and what type of information it holds.
+2. Looked for any restaurants that were listed more than once and fixed that.
+3. Got rid of any information we didn't need.
+4. Combined two different sets of data and added a new column to show which country each restaurant is in.
+5. Fixed any city names that were spelled wrong.
+6. Counted how many restaurants there are using a special method.
+7. Checked the smallest, biggest, and average values for things like votes (how many people rated the restaurant), ratings, and currency used.
+8. Made a new category to group restaurants based on their ratings.
 
-After Data Exploration with SQL, I started working on Analysing the Data with SQL where I found insights such as...
-1. According to this Zomato Dataset, 90.67% of data is related to restaurants listed in India followed by USA(4.45%).
-2. Out of 15 Countries only 2 countries provides Online delivery options to their customers, to be precised only 28.01% of restaurants in India and 46.67% of restaurants in UAE provides online delivery options.
-3. As this dataset contains data most related to India so i worked on gaining insights on Indian Restaurants.
-4. Connaught Place in New Delhi has the most listed restaurants (122) follwed by Rajouri Garden (99) and Shahdara (87)
-5. Most popular cuisines in Connaught Place is North Indian Food.
-6. Out of 122 restaurants in Connaught Place only 54 restaurants provide table booking facility to their customers.
-7. Average Ratings for restaurants with table booking facility is 3.9/5 compared to  restaurants without table booking facility is 3.7/5 in Connaught Place,New Delhi.
-8. Best modrately priced restaurants with average cost for two < 1000, rating > 4, votes > 4 and provides both table booking and online delivery options to their customer with indian cuisines is located in Kolkata,India named as 'India Restaurant',(RestaurantID - 20747).
+From looking at the data, I found out:
+
+1. Most of the data is about restaurants in India, with a smaller amount from the USA.
+2. Only a few countries offer online delivery options, like 28.01% of restaurants in India and 46.67% in the UAE.
+3. Since there's a lot of info about Indian restaurants, I focused on them.
+4. Connaught Place in New Delhi has the most restaurants listed, followed by Rajouri Garden and Shahdara.
+5. North Indian food is really popular in Connaught Place.
+6. Not all restaurants in Connaught Place let you book tables, but most do.
+7. Restaurants that let you book tables tend to have higher ratings than those that don't.
+8. I found a great moderately priced Indian restaurant in Kolkata called 'India Restaurant' that offers table booking, online delivery, and has high ratings and votes.
+
+Overall, this analysis helped us understand how restaurants are doing in different places and what customers like.
